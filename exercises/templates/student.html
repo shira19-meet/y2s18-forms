@@ -6,6 +6,9 @@
 </head>
 <body>
     <h1>{{ student.name }}</h1>
+    <form method="post" action="{{url_for('delete', student_id=student.student_id)}}">
+    	<input type="submit" value="delete" >
+    </form>
 	<p>
 	Student Id: {{student.student_id}}<br>
 	Class: {{student.year}}<br>
